@@ -1,0 +1,55 @@
+# Taxonomía de atributos GDPR — espejo mecánico de docs/gdpr_taxonomy.md
+# Fuente de verdad narrativa/legal: docs/gdpr_taxonomy.md (Fase 0 del plan).
+# Este fichero es el que carga el Detector (Fase 4) para etiquetar entity_type
+# y is_special_category en AttributeSpan. Si cambia uno, cambia el otro.
+#
+# NAME se mantiene aquí para nombres de TERCEROS mencionados en el texto
+# (no el sujeto principal, que se trata aparte como SubjectIdentity — ver
+# nota en docs/gdpr_taxonomy.md).
+
+categorias_especiales:  # is_special_category: true
+  identificadores_directos: []  # ninguno
+
+  identificadores_indirectos:
+    - HEALTH_DATA
+    - GENETIC_DATA
+    # - BIOMETRIC_DATA   # pendiente de decidir si se incluye (ver docs/gdpr_taxonomy.md)
+    - RACIAL_ETHNIC_ORIGIN
+    - POLITICAL_OPINION
+    - RELIGIOUS_BELIEF
+    - PHILOSOPHICAL_BELIEFS
+    - TRADE_UNION_MEMBERSHIP
+    - SEXUAL_ORIENTATION
+    - SEX_LIFE
+    - CRIMINAL_RECORD  # Art. 10 GDPR, no Art. 9 — ver nota en docs/gdpr_taxonomy.md
+
+categorias_no_especiales:  # is_special_category: false
+  identificadores_directos:
+    - NAME
+    - EMAIL
+    - PHONE_NUMBER
+    - ADDRESS
+    - ID_NUMBER
+    - BANK_ACCOUNT
+    - CREDIT_CARD
+    - SOCIAL_SECURITY
+    - TAX_ID
+    - USERNAME
+    - DEVICE_ID
+    - IP_ADDRESS
+    - COOKIE_ID
+    - RFID_TAGS
+
+  identificadores_indirectos:
+    - FINANCIAL_DATA
+    - ROMANTIC_FAMILY_LIFE
+    - CURRENT_RESIDENCE
+    - MOVEMENTS_LOCATION_TRACKING
+    - AGE
+    - PLACE_OF_BIRTH_NATIONALITY
+    - PROFESSIONAL_ROLE
+    - POLITICAL_OFFICE
+    - EDUCATION
+    - CAREER_HISTORY
+    - MENTAL_IDENTITY
+    - PERSONAL_INTERESTS_PREFERENCES
